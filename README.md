@@ -1,5 +1,5 @@
-# US_Power_Outages
-Data Analysis of US Power Outages for UCSD DSC80 Project
+# US Power Outage Analysis
+Data Analysis and Predictive Modeling of US Power Outages
 
 Nathan Ko, Walter Wong
 
@@ -272,6 +272,23 @@ Signficant level:
 ### Permutation Test
 We found the observed difference of accuracy between data from the south and the data elsewhere. Then we shuffled the CLIMATE.REGION column to see if there is a change in accuracy. Then we find the permuted difference of accuracy between data from the data from the south and data elsewhere. After permutation testing, we resulted in a p-value of 0.187. This is higher than our significant level of 0.01. Therefore, we fail to reject the null hypothesis and claim that our model predicts the same being trained on data from the south and data elsewhere.  
 
-
+## File Structure
+```
+|
+├───data
+│   ├───outage.xlsx
+│ 
+├───assets
+│   ├───plot_agg_1.html
+│   ├───plot_bivar_1.html
+│   ├───plot_mar_1.html
+│   ├───plot_mar_2.html
+│   ├───plot_univar_1.html
+│   ├───plot_univar_2.html
+│ 
+├───project_notebook.ipynb
+├───README.md
+└───requirements.txt
+```
 
 
